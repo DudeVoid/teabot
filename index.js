@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const { prefix, token } = require('./config.json');
 
 client.on('ready', () => {
-    console.log('Yay! I\'ve successfully started with no errors');
+    console.log('Yay! I\'ve successfully started with no [visible] errors');
     client.user.setActivity('heck off');
 });
 
