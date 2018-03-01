@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const { prefix, token } = require('./config.json');
 
 client.on('ready', () => {
-    console.log('Yay! I\'ve successfully started with no [visible] errors');
+    console.log('Yay! I\'ve successfully started with no errors');
     client.user.setActivity('heck off');
 });
 
@@ -35,6 +35,10 @@ client.on('message', msg => {
         userToKick.kick();
         msg.channel.send('Booted! 👢');
         modLog.send(`👢 | <@${msg.author.id}> kicked <@${userToKick.id}> for **${reason || "No reason? :("}**`);
+    }
+
+    if(msg.content.startsWith(prefix + 'help')) {
+        msg.reply(`Typing \`${msg.content}\` currently does not show a list of available commands.\nInstead, you'll have to run: \`${msg.content + ' <commandName>'}\``);
     }
 
     /* if(msg.content.startsWith(prefix + 'say')) { 
