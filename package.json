@@ -1,0 +1,28 @@
+{
+  "name": "teabot",
+  "version": "0.0.0",
+  "description": "Private moderation and logging bot for the Discord server: Tea Party",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DudeVoid/teabot.git"
+  },
+  "keywords": [
+    "logging",
+    "moderation",
+    "private"
+  ],
+  "author": "void#0038",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DudeVoid/teabot/issues"
+  },
+  "homepage": "https://github.com/DudeVoid/teabot#readme",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "fs": "0.0.1-security"
+  }
+}
